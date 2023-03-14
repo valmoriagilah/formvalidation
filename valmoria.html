@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Join The VIP Club</title>
+    
+    <style>
+      .container {
+        width: 50%;
+        margin: 0 auto;
+        padding: 20px;
+      }
+
+      form {
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+        padding: 50px;
+      }
+
+
+      input[type="text"],
+      input[type="number"],
+      input[type="email"],
+      input[type="password"],
+      select,
+      input[type="checkbox"] {
+        width: 100%;
+        padding: 15px;
+        margin-bottom: 10px;
+        border: 1px solid #000000;
+        border-radius: 1px;
+        box-sizing: border-box;
+      }
+
+      input[type="submit"] {
+        background-color: #333;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 1px;
+        cursor: pointer;
+      }
+
+      input[type="submit"]:hover {
+        background-color: #4CAF50;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <h2> <center>Coupons, Perks & More</center></h2>
+      <h1 style="color:deeppink;"> <center> JOIN THE FREE
+      <br> VIP CLUB </br>  </center> </h1>
+      <h2>Step 1: Create an Account</h2>
+      <p>The VIP Shopper Club is a membership-based club for our savviest shoppers. Members receive periodic center updates and sale information from us. In addition, VIP Shopper Club members receive free access to My VIP Centers, a password-protected portion of our website where visitors can find exclusive offers from our merchants. </p>
+      <form>
+
+        <input type="text" id="name" name="name" placeholder="FULLNAME" required minlength="3" maxlength="50">
+        <input type="number" id="age" name="age" placeholder="AGE" required min="18" max="99">
+        <input type="email" id="email" name="email" placeholder="EMAIL ADDRESS" required maxlength="100" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+        <input type="password" id="password" name="password" placeholder="PASSWORD" required minlength="6" maxlength="20" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}">
+        <input type="password" id="confirm_password" name="confirm_password" placeholder="CONFIRM PASSWORD" required minlength="6" maxlength="20" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}" onchange="checkPasswordMatch()">
+
+        <ul>
+  <li>One Uppercase Character</li>
+  <li>One Lowercase Character</li>
+  <li>One Special Character</li> 
+  <li>One Number</li>               
+  <li>6 Characters Minimum</li>
+</ul>
+        <label for="gender">Gender</label>
+        <select id="gender" name="gender">
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+        </select>
+
+        <label for="city">Address</label>
+        <select id="city" name="city">
+          <option value="new-york">Balingasag</option>
+          <option value="los-angeles">Jasaan</option>
+          <option value="chicago">Salay</option>
+          <option value="houston">Tagoloan</option>
+          <option value="miami">Villa</option>
+        </select>
+
+        <label for="terms">Yes, I want to become a VIP Club member as I am 18 years of age or older and agree to receive electronic messages from Simon Property Group regarding events, sales, store openings and other information about Simon and/or its shopping centers. You may withdraw your consent or contact us anytime. I also agree to Simon's Terms of Use, Privacy Policy & Cookie Policy.</label>
+        <input type="checkbox" id="terms" name="terms">
+
+        <input type="submit" value="SUBMIT">
+      </form>
+    </div>
+  </body>
+</html>
